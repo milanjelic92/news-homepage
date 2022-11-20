@@ -7,6 +7,7 @@
 body {
     width: 70%;
     margin: 0 auto;
+    height: 1000px;
     background-color: hsl(36, 100%, 99%);
 }
 /* header stayling*/
@@ -22,7 +23,7 @@ header {
 }
 .nav-container {
     width: 500px;
-    margin-right: -20px;
+    
 }
 .navigation-links {
     display: flex;
@@ -44,16 +45,19 @@ header {
 
 /*grid stayling*/
 
+main {
+    display: grid;
+}
 
 /*left-section*/
 
 .grid-container {
     width: auto;
-    height: 500px;
-    margin-top: 40px;
+    height: auto;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 70% 30%;
-    gap: 20px;
+  
 }
 .left-section {
     display: grid;
@@ -76,30 +80,37 @@ picture {
 
 }
 .image {
-    width: 100%;
+    width: 95%;
     height: 280px;
     object-fit: cover;
+    transition: 0.2s ease;
     
+}
+.image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
 }
 .info-section {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
     margin-top: 20px;
 }
+
 
 .info-section-left h1 {
     font-family: Inter, sans-serif;
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 3.5em;
+    line-height: 1.1;
     padding-right: 4.5rem;
     color:  hsl(240, 100%, 5%);
    
 }
 .info-section-right p {
     font-family: Inter, sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding-right: 3em;
     line-height: 1.5;
     color:  hsl(236, 13%, 42%);
 }
@@ -108,12 +119,13 @@ button {
     margin-top: 50px;
     background-color:hsl(5, 85%, 63%);
     color:  hsl(36, 100%, 99%);
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 45px;
     font-family: Inter, sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8em;
     font-weight: 700;
     border: none;
+    padding: 0 1.3em;
     letter-spacing: 0.3rem;
     transition: 0.2s ease;
 }
@@ -122,6 +134,7 @@ button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+
     
 
 
@@ -143,7 +156,7 @@ button:hover {
 }
 .offer-section {
     width: 100%;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 30px;
 }
 
@@ -157,13 +170,19 @@ button:hover {
     font-family: Inter, sans-serif;
     color:  hsl(36, 100%, 99%);
     font-size: 1.1rem;
+    transition: 0.2s ease;
+}
+.offer-section h3:hover {
+    color:  hsl(35, 77%, 62%);
+    cursor: pointer;
 }
 .offer-section p {
     font-family: Inter, sans-serif;
     color:  hsl(233, 8%, 79%);
     font-size: 0.8rem;
     margin-top: 10px;
-    padding-right: 5rem;
+    padding-right: 4rem;
+    line-height: 1.7;
 }
 .horizontal-line {
     width: 80%;
@@ -172,3 +191,83 @@ button:hover {
     height: 1px;
     background-color:hsl(233, 8%, 79%);
 }
+.middle-offer-section {
+    margin-top: 25px;
+}
+.bottom-offer-section {
+    margin-top: 25px;
+}
+
+
+/* gaming section */
+
+.gaming-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 54px;
+    width: 100%;
+    height: 130px;
+    margin-top: 40px;
+}
+.retro-container, .laptop-container, .growth-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+}
+.retro-container h3, .laptop-container h3, .growth-container h3 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+    font-family: Inter, sans-serif;
+}
+
+
+.retro-container h4, 
+.laptop-container h4, 
+.growth-container h4 {
+    font-family: Inter, sans-serif;
+    margin-top: 10px;
+    color: hsl(240, 100%, 5%);
+    font-size: 17px;
+    font-weight: 800;
+    transition: 0.2s ease;
+    
+}
+.retro-container h4:hover, 
+.laptop-container h4:hover, 
+.growth-container h4:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.retro-container p, .laptop-container p, .growth-container p {
+    font-family: Inter, sans-serif;
+    color:  hsl(236, 13%, 42%);
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.7;
+    
+    
+}
+
+.retro-image-container, .laptop-image-container, .growth-image-container {
+    width: 100%;
+    height: 130px;
+}
+.retro-image, .laptop-image, .growth-image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+.laptop-container {
+    
+
+}
+.growth-container {
+   
+}
+
+
+
+
+
