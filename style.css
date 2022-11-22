@@ -79,7 +79,7 @@ picture {
 
 }
 .image {
-    width: 95%;
+    width: 93%;
     height: 280px;
     object-fit: cover;
     transition: 0.2s ease;
@@ -92,7 +92,7 @@ picture {
 .info-section {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 380px 380px;
     margin-top: 20px;
 }
 
@@ -407,7 +407,7 @@ button:hover {
         width: 100%;
     }
     .right-section {
-        margin-top: 100px;
+        margin-top: 70px;
     }
   
     .bottom-offer-section {
