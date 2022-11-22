@@ -393,10 +393,35 @@ button:hover {
 
 
 
-
-
-
-
+@media (max-width: 1400px) and (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .gaming-container {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%; 
+        margin-bottom: 50px;   
+    }
+    .image {
+        width: 100%;
+    }
+    .right-section {
+        margin-top: 100px;
+    }
+  
+    .bottom-offer-section {
+        margin-bottom: 30px;
+    }
+    .info-section {
+        margin-top: 30px;
+    }
+    .info-section-left h1 {
+        font-size: 3em;
+    }
+        
+    
+}
 
 
 
