@@ -79,7 +79,7 @@ picture {
 
 }
 .image {
-    width: 93%;
+    width: 94%;
     height: 280px;
     object-fit: cover;
     transition: 0.2s ease;
@@ -309,7 +309,7 @@ button:hover {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 801px) {
     main {
         width: 100%;
         height: 100%;
@@ -415,11 +415,13 @@ button:hover {
     }
     .info-section {
         margin-top: 30px;
+        justify-content: space-between;
     }
+   
     .info-section-left h1 {
-        font-size: 3em;
-    }
-        
+        font-size: 3.5em;
+    } 
+   
     
 }
 
